@@ -17,7 +17,7 @@ class cls_curl
     protected static $timeout = 10;
     protected static $ch = null;
     protected static $proxy = null;
-    protected static $useragent = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.89 Safari/537.36';
+    protected static $useragent = 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.80 Safari/537.36';
     protected static $cookie = null;
     protected static $cookie_jar = null;
     protected static $cookie_file = null;

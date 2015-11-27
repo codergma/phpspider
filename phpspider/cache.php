@@ -30,6 +30,7 @@ class cache
     {
         if(!isset(self::$_instance))
         {
+            self::$_instance = new Redis();
             if(extension_loaded('Redis'))
             {
                 self::$_instance = new Redis();

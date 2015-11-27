@@ -3,8 +3,8 @@
 $GLOBALS['config']['db'] = array(
     'host'=>'127.0.0.1',
     'user'=>'root',
-    'pass'=>'root',
-    'name'=>'test',
+    'pass'=>'mysql2015',
+    'name'=>'spider',
 );
 
 $GLOBALS['config']['redis'] = array(

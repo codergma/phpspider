@@ -16,6 +16,7 @@ $curl->set_cookie($cookie);
 $curl->set_gzip(true);
 $curl->callback = function($response, $info, $request, $error) {
 
+    echo 'callback'.PHP_EOL;
     preg_match("@http://www.zhihu.com/people/(.*?)/about@i", $request['url'], $out);
     $username = $out[1];
     if (empty($response)) 
@@ -37,14 +38,16 @@ $curl->callback = function($response, $info, $request, $error) {
     }
 
 };
-for ($i = 0; $i < 1; $i++) 
+for ($i = 0; $i < 5; $i++) 
 {
     $username = get_user_queue();
+    echo $username.PHP_EOL;
     $username = addslashes($username);
     $url = "http://www.zhihu.com/people/{$username}/about";
     $curl->get($url);
 }
 $data = $curl->execute();
+echo $data.PHP_EOL;
 exit;
 
 $w = new worker();
