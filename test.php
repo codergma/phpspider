@@ -10,7 +10,7 @@ include "user.php";
 include "phpspider/cls_curl.php";
 
 $cookie = trim(file_get_contents("cookie.txt"));
-
+/*
 $curl = new rolling_curl();
 $curl->set_cookie($cookie);
 $curl->set_gzip(true);
@@ -49,9 +49,10 @@ for ($i = 0; $i < 5; $i++)
 $data = $curl->execute();
 echo $data.PHP_EOL;
 exit;
+*/
 
 $w = new worker();
-$w->count = 10;
+$w->count = 2;
 $w->is_once = true;
 $w->log_show = false;
 
