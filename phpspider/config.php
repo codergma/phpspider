@@ -4,7 +4,7 @@ $GLOBALS['config']['db'] = array(
     'host'=>'127.0.0.1',
     'user'=>'root',
     'pass'=>'mysql2015',
-    'name'=>'spider',
+    'name'=>'phpspider',
 );
 
 $GLOBALS['config']['redis'] = array(
